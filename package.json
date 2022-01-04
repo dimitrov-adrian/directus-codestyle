@@ -1,0 +1,68 @@
+{
+  "name": "directus-codestyle",
+  "description": "Shared codestyle configuration for Directus",
+  "version": "9.0.0",
+  "license": "GPL-3.0-only",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dimitrov-adrian/directus-codestyle.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dimitrov-adrian/directus-codestyle/issues"
+  },
+  "homepage": "https://github.com/dimitrov-adrian/directus-codestyle/blob/main/readme.md",
+  "keywords": [
+    "directus",
+    "stylelint",
+    "stylelint-config",
+    "prettier",
+    "prettier-config",
+    "eslint",
+    "eslint-config"
+  ],
+  "files": [
+    ".prettierrc.js",
+    ".eslintrc.js",
+    ".stylelintrc.js",
+    ".editorconfig"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    "./prettier": {
+      "import": "./.prettierrc.js",
+      "require": "./.prettierrc.js"
+    },
+    "./eslint": {
+      "import": "./.eslintrc.js",
+      "require": "./.eslintrc.js"
+    },
+    "./stylelint": {
+      "import": "./.stylelintrc.js",
+      "require": "./.stylelintrc.js"
+    }
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.9.0",
+    "@typescript-eslint/parser": "^5.9.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.2.0",
+    "stylelint-config-html": "^1.0.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^24.0.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-scss": "^4.1.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=8.6.0",
+    "prettier": ">=2.5.0",
+    "stylelint": ">=14.2.0",
+    "typescript": ">=4.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "16.11.9"
+  }
+}
